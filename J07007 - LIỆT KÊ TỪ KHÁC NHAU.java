@@ -15,7 +15,7 @@ class WordSet {
     private Set<String> s;
     
     public WordSet(String fileName) throws FileNotFoundException{
-        Scanner sc = new Scanner(new File("VANBAN.in"));
+        Scanner sc = new Scanner(new File(fileName));
         s = new TreeSet<>();
         while(sc.hasNext()){
             s.add(sc.next().toLowerCase());
